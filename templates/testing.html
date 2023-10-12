@@ -1,0 +1,103 @@
+
+<!-- prints.html -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>3D Prints</title>
+  </head>
+  <body>
+    <h1>Wekcome to Autism Companion</h1>
+    <h3>Autism Companion is conceived as a comprehensive learning platform offering a range of tutorials, guides, and interactive learning materials to assist individuals with autism. The platform will cover various aspects such as Hygiene, Culinary skills, Entertainment, and Health. Each section is designed to be intuitive, engaging, and supportive, offering visual aids, voice assistance, and interactive elements to cater to the diverse needs of the users.
+    </h3>
+    <HR><BR>
+  </body>
+    
+  <head>
+    <meta charset="UTF-8">
+    <title>Centered Tables</title>
+    <style>
+        /* Center all content */
+        body {
+            text-align: center;
+        }
+
+        /* Style for each table */
+        table {
+            width: 100%; /* Full width of the parent container */
+            margin-bottom: 20px; /* Space between tables */
+            border-collapse: collapse;
+        }
+
+        /* Center table header and table data */
+        th, td {
+            text-align: center;
+            padding: 10px;
+        }
+
+        /* Style for table header */
+        th {
+            background-color: #f2f2f2;
+        }
+
+        /* Style for the image container */
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Style for the images */
+        img {
+            margin: 10px; /* Space around images */
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th>Hygiene</th>
+        </tr>
+        <tr>
+            <td>How to wash your hair <button>GO!</button></td>
+        </tr>
+        <tr>
+          <td> How to take a shower <button>GO!</button></td>
+        </tr>
+        <tr>
+          <td> How to brush your teeth <button>GO!</button></td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <th>Culinary Skills </th>
+        </tr>
+        <tr>
+            <td>How to make a sandwich <button>GO!</button></td>
+        </tr>
+        <tr>
+          <td> How to make a salad <button>GO!</button></td>
+        </tr>
+        <tr>
+          <td> How to make a pizza <button>GO!</button></td>
+        </tr>
+
+    <table>
+        <tr>
+            <th>Weather Bowl</th>
+        </tr>
+        <tr>
+            <td>A product of my Design I Engineering class, the Weather Bowl is designed to determine the time of day that has the most ideal conditions for an outdoor run. To do this, I designed and 3D-printed an enclosed sensor network that would measure temperature, relative humidity, and light and placed it outdoors on campus. Each day, the sensor network collected data every thirty minutes and wirelessly published it to the Stevens MQTT server, allowing us to analyze how conditions were changing throughout the day.</td>
+        </tr>
+        <tr>
+            <td class="image-container">
+                <img src="{{ url_for('static', filename='WB.BottomHalfPNG.png') }}" width="500" height="300">
+                <img src="{{ url_for('static', filename='WB.FinalPic2.JPG') }}" width="400" height="500">
+                <img src="{{ url_for('static', filename='WB.TopHalfPNG.png') }}" width="500" height="300">
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>
