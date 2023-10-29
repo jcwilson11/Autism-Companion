@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autism Companion - Hygiene</title>
+    <link rel="stylesheet" href="/assets/css/hygiene_styles.css">
+    <script src="/assets/js/hygiene_scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Autism Companion</h1>
+        <h2>A Supportive Learning Platform</h2>
+    </header>
+    <main>
+        <div class="welcome-message">
+            Welcome, <span id="username">Tovi</span>! <button onclick="changeName()" class="change-name-button">Change Name</button>
+        </div>
+        <section class="guide">
+            <img src="handwashing-icon.png" alt="Hand Washing">
+            <h3>Hand Washing</h3>
+            <p>Learn the proper technique to wash your hands and stay germ-free.</p>
+            <button class="explore-button">Read Guide</button>
+        </section>
+        <section class="guide">
+            <img src="dentalcare-icon.png" alt="Dental Care">
+            <h3>Dental Care</h3>
+            <p>Discover the best ways to keep your teeth and gums healthy.</p>
+            <button class="explore-button">Read Guide</button>
+        </section>
+    </main>
+    <div id="nameModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeModal()">&times;</span>
+            <h3>Enter your name:</h3>
+            <input type="text" id="nameInput">
+            <button onclick="updateName()">Submit</button>
+        </div>
+    </div>
+</body>
+</html>
