@@ -1,41 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Autism Companion - Hygiene</title>
-    <link rel="stylesheet" href="/assets/css/hygiene_styles.css">
-    <script src="/assets/js/hygiene_scripts.js" defer></script>
+    <title>Autism Companion</title>
+    <link rel="stylesheet" href="/assets/css/category_styles.css">
+    <script src="/assets/js/main_scripts.js" defer></script>
 </head>
+
 <body>
-    <header>
-        <h1>Autism Companion</h1>
-        <h2>A Supportive Learning Platform</h2>
-    </header>
-    <main>
-        <div class="welcome-message">
-            Welcome, <span id="username">Tovi</span>! <button onclick="changeName()" class="change-name-button">Change Name</button>
-        </div>
-        <section class="guide">
-            <img src="handwashing-icon.png" alt="Hand Washing">
-            <h3>Hand Washing</h3>
-            <p>Learn the proper technique to wash your hands and stay germ-free.</p>
-            <button class="explore-button">Read Guide</button>
+    <div class="container">
+        <header>
+            <div class="title-container">
+                <h1>Autism Companion</h1>
+                <p>A Supportive Learning Platform</p>
+
+                <div style="display: flex; align-items: center;">
+                    <h2 id="welcomeMessage"></h2>
+                    <button id="changeNameButton" style="margin-left: 10px;">Change Name</button>
+                </div>
+            </div>
+        </header>
+
+        <section class="categories-hygiene">
+            <div class="category">
+                <div class="category-image">
+                    <img src="/assets/media/hygiene-media/WashHair-icon.png" alt="Wash Hair Icon">
+                </div>
+                <div class="category-content">
+                    <h1>Wash Hair</h1>
+                    <p>Washing our hair helps keep it clean and shiny. We need to wash our hair to remove dirt, sweat, and other stuff that can make it dirty. This helps our hair look nice and can keep our scalp healthy too!</p>
+                </div>
+                <div class="category-button">
+                    <button class="category-btn" onclick="location.href='hygiene/hygiene_index.html'">Start!</button>
+                </div>
+            </div>
+
+            <div class="category">
+                <div class="category-image">
+                    <img src="/assets/media/hygiene-media/Toothbruh.png" alt="Brush Teeth Icon">
+                </div>
+                <div class="category-content">
+                    <h2>Brush Teeth</h2>
+                    <p>Brushing our teeth is super important because it helps keep our teeth and gums healthy and strong. Every time we eat, tiny bits of food can get stuck on our teeth, and if we don't brush them away, they can cause cavities. Brushing twice a day helps to get rid of those food bits and keeps our breath fresh too!</p>
+                </div>
+                <div class="category-button">
+                    <button class="category-btn" onclick="location.href='culinary_index.html'">Start!</button>
+                </div>
+            </div>
+
+            <div class="category">
+                <div class="category-image">
+                    <img src="/assets/media/hygiene-media/Shower.png" alt="Take A Shower Icon">
+                </div>
+                <div class="category-content">
+                    <h2>Take A Shower</h2>
+                    <p>Taking a shower helps to keep our whole body clean and feeling fresh. Taking a shower helps to wash away dirt, sweat, and germs from our body. It's also a great way to relax and feel refreshed!</p>
+                </div>
+                <div class="category-button">
+                    <button class="category-btn" onclick="location.href='entertainment_index.html'">Start!</button>
+                </div>
+            </div>
         </section>
-        <section class="guide">
-            <img src="dentalcare-icon.png" alt="Dental Care">
-            <h3>Dental Care</h3>
-            <p>Discover the best ways to keep your teeth and gums healthy.</p>
-            <button class="explore-button">Read Guide</button>
-        </section>
-    </main>
+    </div>
     <div id="nameModal" class="modal">
         <div class="modal-content">
-            <span class="close-button" onclick="closeModal()">&times;</span>
-            <h3>Enter your name:</h3>
-            <input type="text" id="nameInput">
-            <button onclick="updateName()">Submit</button>
+            <span id="closeButton" class="close">&times;</span>
+            <p>Please enter your name:</p>
+            <input type="text" id="userName" placeholder="Enter your name">
+            <button id="saveButton" onclick="saveName()">Submit</button>
         </div>
     </div>
+
 </body>
+
 </html>
