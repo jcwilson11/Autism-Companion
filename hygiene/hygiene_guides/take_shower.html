@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Take A Shower - Autism Companion</title>
+    <link rel="stylesheet" href="/assets/css/category_styles.css">
+    <script src="/assets/js/main_scripts.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="title-container">
+                <h1><a href="/main_index.html" style="text-decoration: none; color: inherit;">Autism Companion</a></h1>
+                <p>A Supportive Learning Platform</p>
+
+                <div style="display: flex; align-items: center;">
+                    <h2 id="welcomeMessage"></h2>
+                    <button id="changeNameButton" style="margin-left: 10px;">Change Name</button>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section id="instruction-section">
+                <!-- This section will display one step at a time -->
+                <div class="step" id="step1">
+                    <p>Step 1: Turn on warm water in the shower. Turn on the shower head.</p>
+                    <button onclick="showNextStep(2)">Next Step</button>
+                </div>
+                <div class="step" id="step2" style="display:none;">
+                    <p>Step 2: Take off your clothes. Carefully step into the shower.</p>
+                    <button onclick="showNextStep(3)">Next Step</button>
+                </div>
+                <div class="step" id="step3" style="display:none;">
+                    <p>Step 3: Wet and wash your hair with shampoo. Rinse your hair with water</p>
+                    <button onclick="showNextStep(4)">Next Step</button>
+                </div>
+                <div class="step" id="step4" style="display:none;">
+                    <p>Step 4: Wash your body with soap and a washcloth. RInse your body with water.</p>
+                    <button onclick="showNextStep(5)">Next Step</button>
+                </div>
+                <div class="step" id="step5" style="display:none;">
+                    <p>Step 5: Turn off the water when you finish.</p>
+                    <button onclick="showNextStep(6)">Next step</button>
+                </div>
+                <div class="step" id="step6" style="display:none;">
+                    <p>Step 6: Put the cap back on the toothpaste and put away your toothbrush.</p>
+                    <button onclick="showNextStep('flow-map')">Next Step</button>
+                </div>
+
+
+            </section>
+
+            <section id="flow-map-section" style="display:none;">
+                <!-- This section will display the flow map image after all steps are completed -->
+                <h2>Flow Map of Steps</h2>
+                <img src="/assets/media/hygiene-media/WashHair-icon.png" alt="Flow Map of Washing Hair">
+            </section>
+
+            <section id="interactive-activity-section" style="display:none;">
+                <!-- This section will have the interactive activity for review -->
+                <h2>Let's Review!</h2>
+                <!-- Drag and Drop or Select Items Activity -->
+                <div id="review-activity">
+                    <!-- Interactive activity content -->
+                </div>
+                <button onclick="checkActivityResults()">Submit Answers</button>
+            </section>
+        </main>
+
+        <!-- Other content -->
+
+    </div>
+    
+    <!-- Include your modal here -->
+    
+    <script>
+        // JavaScript to control the flow of steps and interactive activity
+    </script>
+
+    <div id="nameModal" class="modal">
+        <div class="modal-content">
+            <span id="closeButton" class="close">&times;</span>
+            <p>Please enter your name:</p>
+            <input type="text" id="userName" placeholder="Enter your name">
+            <button id="saveButton" onclick="saveName()">Submit</button>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -54,3 +54,19 @@ document.getElementById("closeButton").addEventListener("click", closeModal);
 
 // Attach showChangeNameModal function to the change name button
 document.getElementById("changeNameButton").addEventListener("click", showChangeNameModal);
+
+function showNextStep(step) {
+    // Hide all steps
+    var steps = document.getElementsByClassName('step');
+    for (var i = 0; i < steps.length; i++) {
+        steps[i].style.display = 'none';
+    }
+
+    // Show the next step
+    if(step === 'flow-map') {
+        document.getElementById('flow-map-section').style.display = 'block';
+    } else {
+        var nextStep = 'step' + step;
+        document.getElementById(nextStep).style.display = 'block';
+    }
+}
