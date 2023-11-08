@@ -4,16 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
     <title>Autism Companion</title>
-    <link rel="stylesheet" href="/assets/css/main_styles.css">
-    <script src="/assets/js/main_scripts.js" defer></script>
+    <link rel="stylesheet" href="assets/css/main_styles.css">
+    <script src="assets/js/main_scripts.js" defer></script>
 </head>
 
 <body>
     <div class="container">
         <header>
             <div class="title-container">
-                <h1><a href="/main_index.html" style="text-decoration: none; color: inherit;">Autism Companion</a></h1>
+                <h1><a href="main_index.html" style="text-decoration: none; color: inherit;">Autism Companion</a></h1>
                 <p>A Supportive Learning Platform</p>
 
                 <div style="display: flex; align-items: center;">
@@ -28,21 +29,21 @@
                 <h2>Hygiene</h2>
                 <img src="assets\media\main-media\hygiene-icon.png" alt="Hygiene Icon">
                 <p>Learn to stay clean and feel good!</p>
-                <button class="category-btn" onclick="location.href='hygiene/hygiene_index.html'">Explore</button>                
+                <button class="category-btn" onclick="location.href='/hygiene/hygiene_index.html'">Explore</button>                
             </div>
             
             <div class="category">
                 <h2>Culinary Skills</h2>
                 <img src="assets\media\main-media\culinary-icon.png" alt="Culinary Skills Icon">
                 <p>Fun ways to make yummy food!</p>
-                <button class="category-btn" onclick="location.href='culinary-skills/culinary_index.html'">Explore</button>
+                <button class="category-btn" onclick="location.href='/culinary-skills/culinary_index.html'">Explore</button>
             </div>
 
             <div class="category">
                 <h2>Entertainment</h2>
                 <img src="assets\media\main-media\entertainment-icon.png" alt="Entertainment Icon">
                 <p>Play, laugh, and have a good time!</p>
-                <button class="category-btn" onclick="location.href='entertainment/entertainment_index.html'">Explore</button>
+                <button class="category-btn" onclick="location.href='/entertainment/entertainment_index.html'">Explore</button>
             </div>
         </section>
     </div>
