@@ -70,3 +70,18 @@ function showNextStep(step) {
         document.getElementById(nextStep).style.display = 'block';
     }
 }
+
+function showPreviousStep(step) {
+    // Hide the current step
+    var currentStep = document.getElementById('step' + (step + 1));
+    if (currentStep) {
+      currentStep.style.display = 'none';
+    }
+  
+    // Show the previous step
+    var prevStep = document.getElementById('step' + step);
+    if (prevStep) {
+      prevStep.style.display = 'block';
+    }
+  }
+  
