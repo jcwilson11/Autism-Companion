@@ -72,6 +72,7 @@ function showNextStep(step) {
 }
 
 function showPreviousStep(step) {
+    document.getElementById('flow-map-section').style.display = 'none';
     // Hide the current step
     var currentStep = document.getElementById('step' + (step + 1));
     if (currentStep) {
