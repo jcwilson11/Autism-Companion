@@ -25,31 +25,36 @@
             <!-- This section will display one step at a time -->
             <section id="instruction-section">
                 <div class="step" id="step1">
-                    <img src="\assets\media\hygiene-media\teeth\teeth_S1.png" alt="Wait in line to buy a ticket" width="600" height="500">
+                    <img src="\assets\media\hygiene-media\teeth\teeth_S1.png" alt="Turn on water from the faucet and wet your toothbrush" width="600" height="500">
                     <p>Step 1: Turn on water from the faucet and wet your toothbrush.</p>
                     <button onclick="showNextStep(2)">Next Step</button>
                 </div>
                 <div class="step" id="step2" style="display:none;">
+                    <img src="\assets\media\hygiene-media\teeth\teeth_S2.png" alt="Remove the cap on the toothpaste. Squeeze toothpaste onto your toothbrush, about the size of a pea" width="600" height="500">
                     <p>Step 2: Remove the cap on the toothpaste. Squeeze toothpaste onto your toothbrush, about the size of a pea.</p>
                     <button onclick="showPreviousStep(1)">Previous Step</button>
                     <button onclick="showNextStep(3)">Next Step</button>
                 </div>
                 <div class="step" id="step3" style="display:none;">
+                    <img src="\assets\media\hygiene-media\teeth\teeth_S3.jpg" alt="Rub the bristles on all sides of your teeth in small circles. Brush your gums and tongue too" width="600" height="500">
                     <p>Step 3: Rub the bristles on all sides of your teeth in small circles. Brush your gums and tongue too.</p>
                     <button onclick="showPreviousStep(2)">Previous Step</button>
                     <button onclick="showNextStep(4)">Next Step</button>
                 </div>
                 <div class="step" id="step4" style="display:none;">
+                    <img src="\assets\media\hygiene-media\teeth\teeth_S4.png" alt="Spit in the sink and rinse your toothbrush well" width="800" height="500">
                     <p>Step 4: Spit in the sink and rinse your toothbrush well.</p>
                     <button onclick="showPreviousStep(3)">Previous Step</button>
                     <button onclick="showNextStep(5)">Next Step</button>
                 </div>
                 <div class="step" id="step5" style="display:none;">
+                    <img src="\assets\media\hygiene-media\teeth\teeth_S5.jpg" alt="Rinse your mouth with water and spit again" width="600" height="500">
                     <p>Step 5: Rinse your mouth with water and spit again.</p>
                     <button onclick="showPreviousStep(4)">Previous Step</button>
                     <button onclick="showNextStep(6)">Next step</button>
                 </div>
                 <div class="step" id="step6" style="display:none;">
+                    <img src="\assets\media\hygiene-media\teeth\teeth_S6.png" alt="Put the cap back on the toothpaste and put away your toothbrush" width="600" height="500">
                     <p>Step 6: Put the cap back on the toothpaste and put away your toothbrush.</p>
                     <button onclick="showPreviousStep(5)">Previous Step</button>
                     <button onclick="showNextStep('flow-map')">Next Step</button>
@@ -60,8 +65,9 @@
 
             <section id="flow-map-section" style="display:none;">
                 <!-- This section will display the flow map image after all steps are completed -->
-                <h2>Flow Map of Steps</h2>
-                <img src="/assets/media/hygiene-media/WashHair-icon.png" alt="Flow Map of Washing Hair">
+                <h2>How To Go To A Movie Theater</h2>
+                <img src="\assets\media\hygiene-media\teeth\teeth_map.png" alt="Wait in line to buy a ticket" width="1500">
+                <button onclick="showPreviousStep(6)">Previous Step</button>
             </section>
 
             <section id="interactive-activity-section" style="display:none;">
