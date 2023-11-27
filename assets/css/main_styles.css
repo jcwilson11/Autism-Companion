@@ -45,9 +45,10 @@ body {
 }
 
 .category img {
-    max-width: 80%;
-    height: auto;
-    border-radius: 50%;
+    width: 300px; /* Set a fixed width */
+    height: 300px; /* Set the same value for height to make it a circle */
+    object-fit: cover; /* This will ensure the image covers the area without stretching */
+    border-radius: 50%; /* Keeps the image circular */
     margin-bottom: 20px;
 }
 
