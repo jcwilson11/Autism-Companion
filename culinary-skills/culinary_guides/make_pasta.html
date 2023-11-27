@@ -25,70 +25,71 @@
             <!-- This section will display one step at a time -->
             <section id="instruction-section">
                 <div class="step" id="step1">
+                    <img src="\assets\media\culinary-media\kraft\kraft_S1.png" alt="Gather your ingredients and tools. You will need bread, peanut butter, jelly or jam, and a butter knife." width="700" height="500">
                     <p>Step 1: Get a pot.</p>
                     <button onclick="showNextStep(2)">Next Step</button>
                 </div>
                 <div class="step" id="step2" style="display:none;">
+                    <img src="\assets\media\culinary-media\kraft\kraft_S2.png" alt="Gather your ingredients and tools. You will need bread, peanut butter, jelly or jam, and a butter knife." width="700" height="500">
                     <p>Step 2: Pour 6 cups of water into the pot.</p>
                     <button onclick="showPreviousStep(1)">Previous Step</button>
                     <button onclick="showNextStep(3)">Next Step</button>
                 </div>
                 <div class="step" id="step3" style="display:none;">
+                    <img src="\assets\media\culinary-media\kraft\kraft_S3.png" alt="Gather your ingredients and tools. You will need bread, peanut butter, jelly or jam, and a butter knife." width="700" height="500">
                     <p>Step 3: Set stove to high and wait for water to boil.</p>
                     <button onclick="showPreviousStep(2)">Previous Step</button>
                     <button onclick="showNextStep(4)">Next Step</button>
                 </div>
                 <div class="step" id="step4" style="display:none;">
+                    <img src="\assets\media\culinary-media\kraft\kraft_S4.png" alt="Gather your ingredients and tools. You will need bread, peanut butter, jelly or jam, and a butter knife." width="700" height="500">
                     <p>Step 4: Once boiling, add macaroni. Stir with a big spoon.</p>
                     <button onclick="showPreviousStep(3)">Previous Step</button>
                     <button onclick="showNextStep(5)">Next Step</button>
                 </div>
                 <div class="step" id="step5" style="display:none;">
+                    <img src="\assets\media\culinary-media\kraft\kraft_S5.png" alt="Gather your ingredients and tools. You will need bread, peanut butter, jelly or jam, and a butter knife." width="700" height="500">
                     <p>Step 5:  Boil for 7-8 minutes, stirring every minute.</p>
                     <button onclick="showPreviousStep(4)">Previous Step</button>
                     <button onclick="showNextStep(6)">Next step</button>
                 </div>
                 <div class="step" id="step6" style="display:none;">
+                    <img src="\assets\media\culinary-media\kraft\kraft_S6.png" alt="Gather your ingredients and tools. You will need bread, peanut butter, jelly or jam, and a butter knife." width="700" height="500">
                     <p>Step 6:  After 7-8 minutes, turn off the stove.</p>
                     <button onclick="showPreviousStep(5)">Previous Step</button>
                     <button onclick="showNextStep(7)">Next step</button>
                 </div>
                 <div class="step" id="step7" style="display:none;">
+                    <img src="\assets\media\culinary-media\kraft\kraft_S7.png" alt="Gather your ingredients and tools. You will need bread, peanut butter, jelly or jam, and a butter knife." width="700" height="500">
                     <p>Step 7: Carefully drain the water from the pot.</p>
                     <button onclick="showPreviousStep(6)">Previous Step</button>
                     <button onclick="showNextStep(8)">Next step</button>
                 </div>
                 <div class="step" id="step8" style="display:none;">
-                    <p>Step 8: Put macaroni back in the pot.</p>
+                    <img src="\assets\media\culinary-media\kraft\kraft_S8.png" alt="Gather your ingredients and tools. You will need bread, peanut butter, jelly or jam, and a butter knife." width="700" height="500">
+                    <p>Step 8: Put the macaroni back in the pot.</p>
                     <button onclick="showPreviousStep(7)">Previous Step</button>
                     <button onclick="showNextStep(9)">Next Step</button>
                 </div>
                 <div class="step" id="step9" style="display:none;">
-                    <p>Step 9: Carefully drain the water from the pot.</p>
+                    <img src="\assets\media\culinary-media\kraft\kraft_S9.png" alt="Gather your ingredients and tools. You will need bread, peanut butter, jelly or jam, and a butter knife." width="700" height="500">
+                    <p>Step 9: Add 4 tablespoons butter, 1/4 cup milk, and Kraft cheese mix.</p>
                     <button onclick="showPreviousStep(8)">Previous Step</button>
                     <button onclick="showNextStep(10)">Next step</button>
                 </div>
                 <div class="step" id="step10" style="display:none;">
-                    <p>Step 10: Put macaroni back in the pot.</p>
+                    <img src="\assets\media\culinary-media\kraft\kraft_S10.png" alt="Gather your ingredients and tools. You will need bread, peanut butter, jelly or jam, and a butter knife." width="700" height="500">
+                    <p>Step 10: Stir everything together until well mixed. Then serve the mac & cheese on a plate and enjoy.</p>
                     <button onclick="showPreviousStep(9)">Previous Step</button>
-                    <button onclick="showNextStep(11)">Next step</button>
-                </div>
-                <div class="step" id="step11" style="display:none;">
-                    <p>Step 11: Add 4 tablespoons butter, 1/4 cup milk, and Kraft cheese mix.</p>
-                    <button onclick="showPreviousStep(10)">Previous Step</button>
-                    <button onclick="showNextStep(12)">Next step</button>
-                </div>
-                <div class="step" id="step12" style="display:none;">
-                    <p>Step 12: Stir everything together until well mixed. Then serve the mac & cheese on a plate and enjoy.</p>
-                    <button onclick="showPreviousStep(11)">Previous Step</button>
                     <button onclick="showNextStep('flow-map')">Next Step</button>
                 </div>
 
             </section>
 
             <section id="flow-map-section" style="display:none;">
-                <h2>Flow Map of Steps</h2>
-                <img src="/assets/media/hygiene-media/WashHair-icon.png" alt="Flow Map of Washing Hair">
+                <h2>How To Cook Kraft Mac and Cheese</h2>
+                <img src="\assets\media\culinary-media\kraft\kraft_map.png" alt="kraft flow map" width="1500">
+                <button onclick="showPreviousStep(10)">Previous Step</button>
             </section>
 
             <section id="interactive-activity-section" style="display:none;">
