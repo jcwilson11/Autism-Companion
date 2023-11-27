@@ -1,3 +1,12 @@
+function initialSetup() {
+    if (!getUserName()) {
+        modal.style.display = "block";
+    } else {
+        updateWelcomeMessage();
+    }
+    openChecklist(); // Open the checklist automatically when the page loads
+}
+
 // Modal logic
 let modal = document.getElementById("nameModal");
 
@@ -85,4 +94,37 @@ function showPreviousStep(step) {
       prevStep.style.display = 'block';
     }
   }
-  
+
+
+function checkChecklist() {
+    // Get all checkbox items within the pop-up
+    var items = document.querySelectorAll("#checklistPopup .checklist-items input[type='checkbox']");
+    var allChecked = true;
+
+    // Check if all checkboxes are checked
+    items.forEach(function(item) {
+        if (!item.checked) {
+            allChecked = false;
+        }
+    });
+
+    // If all checkboxes are checked, close the pop-up
+    if (allChecked) {
+        closeChecklist();
+    }
+}
+
+window.onload = function() {
+    // Open the checklist automatically when the page loads
+    openChecklist();
+};
+
+function openChecklist() {
+    document.getElementById("checklistPopup").style.display = "block";
+}
+
+function closeChecklist() {
+    document.getElementById("checklistPopup").style.display = "none";
+}
+
+window.onload = initialSetup;

@@ -20,8 +20,33 @@
                 </div>
             </div>
         </header>
-
+        <div id="checklistPopup" class="popup" style="display:none;">
+            <div class="popup-content">
+                <span class="close" onclick="closeChecklist()">&times;</span>
+                <h2>Checklist for Making Pancakes</h2>
+                <div class="checklist-items">
+                    <input type="checkbox" id="item1" name="item1" onchange="checkChecklist()">
+                    <label for="item1">Mixing bowl</label><br>
+                    <input type="checkbox" id="item2" name="item2" onchange="checkChecklist()">
+                    <label for="item2">Pancake mix</label><br>
+                    <input type="checkbox" id="item3" name="item3" onchange="checkChecklist()">
+                    <label for="item3">Measruing cup</label><br>
+                    <input type="checkbox" id="item4" name="item4" onchange="checkChecklist()">
+                    <label for="item4">Water</label><br>
+                    <input type="checkbox" id="item5" name="item5" onchange="checkChecklist()">
+                    <label for="item5">Whisk or fork</label><br>
+                    <input type="checkbox" id="item6" name="item6" onchange="checkChecklist()">
+                    <label for="item6">Pan</label><br>
+                    <input type="checkbox" id="item7" name="item7" onchange="checkChecklist()">
+                    <label for="item7">Oil spray</label><br>
+                    <input type="checkbox" id="item8" name="item8" onchange="checkChecklist()">
+                    <label for="item8">Spatula</label><br>
+                </div>
+                <button onclick="closeChecklist()" class="btn">Done</button>
+            </div>
+        </div>
         <main>
+            <button id="openChecklistBtn" onclick="openChecklist()">Open Checklist</button>
             <!-- This section will display one step at a time -->
             <section id="instruction-section">
                 <div class="step" id="step1">
@@ -83,8 +108,6 @@
                     <button onclick="showPreviousStep(9)">Previous Step</button>
                     <button onclick="showNextStep('flow-map')">Next Step</button>
                 </div>
-
-
             </section>
 
             <section id="flow-map-section" style="display:none;">
@@ -93,26 +116,7 @@
                 <button onclick="showPreviousStep(10)">Previous Step</button>
             </section>
 
-            <section id="interactive-activity-section" style="display:none;">
-                <!-- This section will have the interactive activity for review -->
-                <h2>Let's Review!</h2>
-                <!-- Drag and Drop or Select Items Activity -->
-                <div id="review-activity">
-                    <!-- Interactive activity content -->
-                </div>
-                <button onclick="checkActivityResults()">Submit Answers</button>
-            </section>
         </main>
-
-        <!-- Other content -->
-
-    </div>
-    
-    <!-- Include your modal here -->
-    
-    <script>
-        // JavaScript to control the flow of steps and interactive activity
-    </script>
 
     <div id="nameModal" class="modal">
         <div class="modal-content">

@@ -20,8 +20,35 @@
                 </div>
             </div>
         </header>
-
+        <div id="checklistPopup" class="popup" style="display:none;">
+            <div class="popup-content">
+                <span class="close" onclick="closeChecklist()">&times;</span>
+                <h2>Checklist for Making Kraft Mac and Cheese</h2>
+                <div class="checklist-items">
+                    <input type="checkbox" id="item1" name="item1" onchange="checkChecklist()">
+                    <label for="item1">Pot</label><br>
+                    <input type="checkbox" id="item2" name="item2" onchange="checkChecklist()">
+                    <label for="item2">Water</label><br>
+                    <input type="checkbox" id="item3" name="item3" onchange="checkChecklist()">
+                    <label for="item3">Measuring cup</label><br>
+                    <input type="checkbox" id="item4" name="item4" onchange="checkChecklist()">
+                    <label for="item4">Macaroni</label><br>
+                    <input type="checkbox" id="item5" name="item5" onchange="checkChecklist()">
+                    <label for="item5">Big spoon</label><br>
+                    <input type="checkbox" id="item6" name="item6" onchange="checkChecklist()">
+                    <label for="item6">Butter</label><br>
+                    <input type="checkbox" id="item7" name="item7" onchange="checkChecklist()">
+                    <label for="item7">Milk</label><br>
+                    <input type="checkbox" id="item8" name="item8" onchange="checkChecklist()">
+                    <label for="item8">Kraft cheese mix</label><br>
+                    <input type="checkbox" id="item9" name="item9" onchange="checkChecklist()">
+                    <label for="item8">Strainer</label><br>
+                </div>
+                <button onclick="closeChecklist()" class="btn">Done</button>
+            </div>
+        </div>
         <main>
+            <button id="openChecklistBtn" onclick="openChecklist()">Open Checklist</button>
             <!-- This section will display one step at a time -->
             <section id="instruction-section">
                 <div class="step" id="step1">
