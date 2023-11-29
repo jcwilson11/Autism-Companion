@@ -66,9 +66,9 @@ body {
 }
 
 .category img {
-    width: 300px; /* Set a fixed width */
-    height: 300px; /* Set the same value for height to make it a circle */
-    object-fit: cover; /* This will ensure the image covers the area without stretching */
+    width: 300px; 
+    height: 300px; 
+    object-fit: cover; 
     border-radius: 50%; /* Keeps the image circular */
     margin-bottom: 20px;
 }
@@ -137,22 +137,22 @@ button:hover {
 .popup {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    z-index: 1; 
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    width: 100%; 
+    height: 100%; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
 }
 
 /* Pop-up Content */
 .popup-content {
     background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
+    margin: 15% auto; 
     padding: 20px;
     border: 1px solid #888;
-    width: 30%; /* Could be more or less, depending on screen size */
+    width: 30%; 
     position: relative;
 }
 
