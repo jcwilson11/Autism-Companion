@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chnage Bedsheets - Autism Companion</title>
+    <title>Make The Bed - Autism Companion</title>
     <link rel="stylesheet" href="/assets/css/category_styles.css">
     <script src="/assets/js/main_scripts.js" defer></script>
 </head>
@@ -25,71 +25,54 @@
             <section id="instruction-section">
                 <!-- This section will display one step at a time -->
                 <div class="step" id="step1">
-                    <img src="" alt="" width="700" height="500">
-                    <p>Step 1: Carefully take off the pillowcases from the pillows.</p>
+                    <img src="\assets\media\hygiene-media\sheets\sheets_S1.png" alt="" width="600" height="500">
+                    <p>Step 1: Pick up the sheet.</p>
                     <button onclick="showNextStep(2)">Next Step</button>
                 </div>
                 <div class="step" id="step2" style="display:none;">
-                    <img src="" alt="" width="700" height="500">
-                    <p>Step 2: Remove the blanket and flat sheet from the bed.</p>
+                    <img src="\assets\media\hygiene-media\sheets\sheets_S2.png" alt="." width="700" height="500">
+                    <p>Step 2: Place your hand on the corner of the sheet and tuck the sheet under the one corner of the bed.</p>
                     <button onclick="showPreviousStep(1)">Previous Step</button>
                     <button onclick="showNextStep(3)">Next Step</button>
                 </div>
                 <div class="step" id="step3" style="display:none;">
-                    <img src="" alt="" width="700" height="500">
-                    <p>Step 3: Carefully take off the fitted sheet from the mattress.</p>
+                    <img src="\assets\media\hygiene-media\sheets\sheets_S3.png" alt="" width="700" height="500">
+                    <p>Step 3: Place your hand on the corner of the sheet and tuck the sheet under the one corner of the bed.</p>
                     <button onclick="showPreviousStep(2)">Previous Step</button>
                     <button onclick="showNextStep(4)">Next Step</button>
                 </div>
                 <div class="step" id="step4" style="display:none;">
-                    <img src="" alt="" width="700" height="500">
-                    <p>Step 4: Identify the short side of the new fitted sheet.</p>
+                    <img src="\assets\media\hygiene-media\sheets\sheets_S4.png" alt="" width="700" height="500">
+                    <p>Step 4: Place your hand on the corner of the sheet and tuck the sheet under the one corner of the bed.</p>
                     <button onclick="showPreviousStep(3)">Previous Step</button>
                     <button onclick="showNextStep(5)">Next Step</button>
                 </div>
                 <div class="step" id="step5" style="display:none;">
-                    <img src="/assets/media/hygiene-media/sheets/sheets_S5.png" alt="" width="700" height="500">
-                    <p>Step 5: Align one corner of the sheet with a corner of the mattress and tuck it underneath.</p>
+                    <img src="\assets\media\hygiene-media\sheets\sheets_S5.png" alt="" width="700" height="500">
+                    <p>Step 5: Place your hand on the corner of the sheet and tuck the sheet under the one corner of the bed.</p>
                     <button onclick="showPreviousStep(4)">Previous Step</button>
                     <button onclick="showNextStep(6)">Next step</button>
                 </div>
                 <div class="step" id="step6" style="display:none;">
-                    <img src="/assets/media/hygiene-media/sheets/sheets_S6.png" alt="" width="700" height="500">
-                    <p>Step 6: Secure the other three corners of the fitted sheet in the same manner.</p>
+                    <img src="\assets\media\hygiene-media\sheets\sheets_S6.png" alt="" width="700" height="500">
+                    <p>Step 6: Take the blanket and put it on the bed.</p>
                     <button onclick="showPreviousStep(5)">Previous Step</button>
                     <button onclick="showNextStep(7)">Next step</button>
                 </div>
                 <div class="step" id="step7" style="display:none;">
-                    <img src="" alt="" width="700" height="500">
-                    <p>Step 7: Spread the new flat sheet evenly over the bed.</p>
+                    <img src="\assets\media\hygiene-media\sheets\sheets_S7.png" alt="" width="700" height="500">
+                    <p>Step 7: Take the pillows and put them on the bed.</p>
                     <button onclick="showPreviousStep(6)">Previous Step</button>
-                    <button onclick="showNextStep(8)">Next step</button>
-                </div>
-                <div class="step" id="step8" style="display:none;">
-                    <img src="" alt="" width="700" height="500">
-                    <p>Step 8: Lay the new lightweight blanket on top of the flat sheet.</p>
-                    <button onclick="showPreviousStep(7)">Previous Step</button>
-                    <button onclick="showNextStep(9)">Next step</button>
-                </div>
-                <div class="step" id="step9" style="display:none;">
-                    <img src="" alt="" width="700" height="500">
-                    <p>Step 9: Insert the pillows into the new pillowcases</p>
-                    <button onclick="showPreviousStep(8)">Previous Step</button>
-                    <button onclick="showNextStep(10)">Next Step</button>
-                </div>
-                <div class="step" id="step10" style="display:none;">
-                    <img src="" alt="" width="700" height="500">
-                    <p>Step 10: Place the pillows at the head of the bed, laying flat.</p>
-                    <button onclick="showPreviousStep(9)">Previous Step</button>
                     <button onclick="showNextStep('flow-map')">Next Step</button>
                 </div>
-
+                
             </section>
 
             <section id="flow-map-section" style="display:none;">
                 <!-- This section will display the flow map image after all steps are completed -->
-                <h2>Flow Map of Steps</h2>
-                <img src="/assets/media/hygiene-media/WashHair-icon.png" alt="Flow Map of Washing Hair">
+                <h2>How To Make Your Bed</h2>
+                <img src="\assets\media\hygiene-media\sheets\sheets_map.png" alt="Flow Map of Washing Hair" width="1500">
+                <button onclick="showPreviousStep(6)">Previous Step</button>
             </section>
 
         </main>
