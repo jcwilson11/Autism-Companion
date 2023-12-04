@@ -26,23 +26,24 @@
                 <h2>Checklist for Making Peanut Butter and Jelly Sandwiches</h2>
                 <div class="checklist-items">
                     <input type="checkbox" id="item1" name="item1" onchange="checkChecklist()">
-                    <label for="item1">Bread</label><br>
+                    <label for="item1"><img src="\assets\media\culinary-media\pbj\pbj_list\bread.png" alt="Bread Icon"> Bread</label><br>
                     <input type="checkbox" id="item2" name="item2" onchange="checkChecklist()">
-                    <label for="item2">Peanut butter</label><br>
+                    <label for="item2"><img src="\assets\media\culinary-media\pbj\pbj_list\pb.png" alt="Peanut Butter Icon"> Peanut butter</label><br>
                     <input type="checkbox" id="item3" name="item3" onchange="checkChecklist()">
-                    <label for="item3">Jelly or jam</label><br>
+                    <label for="item3"><img src="\assets\media\culinary-media\pbj\pbj_list\jelly.png" alt="Jelly Icon"> Jelly or jam</label><br>
                     <input type="checkbox" id="item4" name="item4" onchange="checkChecklist()">
-                    <label for="item4">Butter knife</label><br>
+                    <label for="item4"><img src="\assets\media\culinary-media\pbj\pbj_list\knife.png" alt="Butter Knife Icon"> Butter knife</label><br>
                 </div>
                 <button onclick="closeChecklist()" class="btn">Done</button>
             </div>
         </div>
+        
         <main>
             <button id="openChecklistBtn" onclick="openChecklist()">Open Checklist</button>
             <section id="instruction-section">
                 <div class="step" id="step1">
                     <img src="\assets\media\culinary-media\pbj\pbj_S1.png" alt="Gather your ingredients and tools. You will need bread, peanut butter, jelly or jam, and a butter knife." width="700" height="500">
-                    <p>Step 1: Gather your ingredients and tools. You will need bread, peanut butter, jelly or jam, and a butter knife.</p>
+                    <p>Step 1: Gather your ingredients and tools.</p>
                     <button onclick="showNextStep(2)">Next Step</button>
                 </div>
                 <div class="step" id="step2" style="display:none;">
@@ -97,15 +98,6 @@
                 <button onclick="showPreviousStep(8)">Previous Step</button>
             </section>
 
-            <section id="interactive-activity-section" style="display:none;">
-                <!-- This section will have the interactive activity for review -->
-                <h2>Let's Review!</h2>
-                <!-- Drag and Drop or Select Items Activity -->
-                <div id="review-activity">
-                    <!-- Interactive activity content -->
-                </div>
-                <button onclick="checkActivityResults()">Submit Answers</button>
-            </section>
         </main>
 
     </div>
