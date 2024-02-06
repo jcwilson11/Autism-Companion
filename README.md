@@ -3,6 +3,8 @@
 ## **Repository Overview**
 This repository hosts all related files and notes for my completed project, Autism Companion, a comprehensive and interactive platform designed for children and young adults with autism.
 
+## ***Currently working to transition this project to IpadOS using swift in XCOde***
+
 ---
 
 ## **About the Creator: Joris Wilson**
